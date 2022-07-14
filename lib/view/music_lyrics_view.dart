@@ -249,50 +249,6 @@ class _LyricAppBarState extends State<LyricAppBar> {
           fontWeight: FontWeight.bold,
         ),
       ),
-      // actions: <Widget>[
-      //   IconButton(
-      //     icon: Icon(
-      //       bookmarkIcon,
-      //       color: Colors.black,
-      //     ),
-      //     onPressed: () async {
-      //       final prefs = await SharedPreferences.getInstance();
-      //       final trackIDList = prefs.getStringList('bookmarkList') ?? [];
-      //       final trackNameList = prefs.getStringList('nameList') ?? [];
-      //       final trackAlbumList = prefs.getStringList('albumList') ?? [];
-      //       final trackArtistList = prefs.getStringList('artistList') ?? [];
-      //       setState(() {
-      //         changed = true;
-      //         if (bookmarkIcon == Icons.bookmark_border) {
-      //           bookmarkIcon = Icons.bookmark;
-      //           trackIDList.add(widget.track.trackId.toString());
-      //           trackNameList.add(widget.track.trackName);
-      //           trackAlbumList.add(widget.track.albumName);
-      //           trackArtistList.add(widget.track.artistName);
-      //         } else {
-      //           bookmarkIcon = Icons.bookmark_border;
-      //           if (prefs.containsKey('bookmarkList') &&
-      //               trackIDList.contains(widget.track.trackId.toString())) {
-      //             int index =
-      //                 trackIDList.indexOf(widget.track.trackId.toString());
-      //             trackIDList.removeAt(index);
-      //             trackNameList.removeAt(index);
-      //             trackAlbumList.removeAt(index);
-      //             trackArtistList.removeAt(index);
-      //           }
-      //         }
-      //         prefs.setStringList('bookmarkList', trackIDList);
-      //         prefs.setStringList('nameList', trackNameList);
-      //         prefs.setStringList('albumList', trackAlbumList);
-      //         prefs.setStringList('artistList', trackArtistList);
-      //       });
-      //       //print(trackIDList.toString());
-      //       //print(trackNameList.toString());
-      //       //print(trackAlbumList.toString());
-      //       //print(trackArtistList.toString());
-      //     },
-      //   )
-      // ],
     );
   }
 }
