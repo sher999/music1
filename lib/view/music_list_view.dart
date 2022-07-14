@@ -1,5 +1,4 @@
 import 'package:MusicLyrics/blocs/connectivity_bloc.dart';
-// import 'package:MusicLyrics/view/bookmarks_view.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:MusicLyrics/blocs/music_list_block.dart';
@@ -35,18 +34,6 @@ class _GetMusicListState extends State<GetMusicList> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        // actions: <Widget>[
-        //   IconButton(
-        //     icon: Icon(
-        //       Icons.bookmark,
-        //       color: Colors.black,
-        //     ),
-        //     onPressed: () {
-        //       Navigator.push(context,
-        //           MaterialPageRoute(builder: (context) => BookmarkView()));
-        //     },
-        //   )
-        // ],
       ),
       body: StreamBuilder<ConnectivityResult>(
           stream: _netBloc.connectivityResultStream.asBroadcastStream(),
